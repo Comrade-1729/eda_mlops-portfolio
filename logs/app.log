@@ -1,0 +1,79 @@
+2025-12-13 18:03:16,328 | INFO | test | Notebook imports working perfectly
+2025-12-13 18:53:44,766 | INFO | test | Notebook imports working perfectly
+2026-01-10 07:51:52,076 | ERROR | domain2_phase1_health | Failed to fetch year 2000: 400 Client Error: Bad Request for url: https://xmart-api-public.who.int/DEX_CMS/GHE_FULL?%24filter=FLAG_RANKABLE+eq+1+and+DIM_COUNTRY_CODE+eq+%27IND%27+and+DIM_AGEGROUP_CODE+eq+%27TOTAL%27+and+DIM_SEX_CODE+eq+%27BOTH%27+and+DIM_YEAR_CODE+eq+2000&%24select=DIM_YEAR_CODE%2CDIM_GHECAUSE_CODE%2CDIM_GHECAUSE_TITLE%2CDIM_SEX_CODE%2CDIM_AGEGROUP_CODE%2CVAL_DALY_RATE100K_NUMERIC%2CVAL_DTHS_RATE100K_NUMERIC&%24format=json
+2026-01-10 07:54:16,321 | ERROR | domain2_phase1_health | Failed to fetch year 2000: 400 Client Error: Bad Request for url: https://xmart-api-public.who.int/DEX_CMS/GHE_FULL?%24filter=FLAG_RANKABLE+eq+1+and+DIM_COUNTRY_CODE+eq+%27IND%27+and+DIM_AGEGROUP_CODE+eq+%27TOTAL%27+and+DIM_SEX_CODE+eq+%27BOTH%27+and+DIM_YEAR_CODE+eq+2000&%24select=DIM_YEAR_CODE%2CDIM_GHECAUSE_CODE%2CDIM_GHECAUSE_TITLE%2CDIM_SEX_CODE%2CDIM_AGEGROUP_CODE%2CVAL_DALY_RATE100K_NUMERIC%2CVAL_DTHS_RATE100K_NUMERIC&%24format=json
+2026-01-10 17:52:45,380 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-10 18:12:27,232 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-10 18:14:22,285 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-10 18:14:26,471 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-11 02:32:34,661 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-11 02:32:39,767 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-11 02:38:19,070 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-11 02:38:22,000 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-11 19:06:03,692 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-11 19:06:07,435 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-11 19:42:12,745 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-11 19:42:14,863 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-11 21:59:20,147 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-11 21:59:22,285 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-12 03:16:17,552 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-12 03:16:21,874 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-12 03:27:38,965 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-12 03:27:40,927 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-12 03:28:53,939 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-12 11:21:25,007 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-12 11:41:52,018 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-12 11:43:16,576 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-12 11:43:17,031 | INFO | climate_eda | Pollutants removed (less than 10 observations): {'pm1', 'relativehumidity', 'temperature', 'um003'}
+2026-01-12 11:43:17,032 | INFO | climate_eda | Remaining pollutants: ['pm2.5', 'no2', 'co', 'pm10', 'so2', 'o3']
+2026-01-12 12:22:40,446 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-12 12:22:45,056 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-12 17:40:50,203 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-12 17:40:50,716 | INFO | climate_eda | Pollutants removed (less than 10 observations): {'relativehumidity', 'um003', 'pm1', 'temperature'}
+2026-01-12 17:40:50,719 | INFO | climate_eda | Remaining pollutants: ['pm2.5', 'no2', 'co', 'pm10', 'so2', 'o3']
+2026-01-12 17:53:46,525 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-12 17:53:50,911 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-15 18:44:20,694 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-15 18:46:49,491 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-15 18:48:12,521 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-15 19:14:44,562 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-15 19:16:26,558 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-15 19:16:26,637 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-15 19:16:35,791 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-16 16:54:08,995 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-16 16:54:09,095 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-16 16:54:18,933 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-16 16:54:42,402 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-17 00:37:48,442 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-17 00:37:48,540 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-17 00:37:57,855 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-17 00:38:20,918 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-17 01:25:31,204 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-17 01:25:31,279 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-17 01:25:39,689 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-17 01:26:03,477 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-17 23:29:29,435 | INFO | climate_eda | Phase 1 snapshot saved to d:\def_main\Code\MyProjects\eda-mlops-portfolio\datasets\processed\climate\openaq_processed.csv
+2026-01-17 23:29:30,390 | INFO | climate_eda | Pollutants removed (less than 10 observations): {'um003', 'relativehumidity', 'temperature', 'pm1'}
+2026-01-17 23:29:30,392 | INFO | climate_eda | Remaining pollutants: ['pm2.5', 'no2', 'co', 'pm10', 'so2', 'o3']
+2026-01-18 04:20:41,945 | INFO | domain2_phase1_health | Starting WHO GHE DALY ingestion
+2026-01-18 04:20:46,338 | INFO | domain2_phase1_health | WHO GHE DALY ingestion completed
+2026-01-18 04:28:28,678 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-18 04:28:28,790 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-18 04:28:38,765 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-18 04:29:03,912 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-18 04:54:16,172 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-18 04:54:16,256 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-18 04:54:25,740 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-18 04:54:52,360 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-18 05:24:50,717 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-18 05:24:50,802 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-18 05:24:59,010 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-18 05:25:25,805 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-19 14:50:50,700 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-19 14:50:50,805 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-19 14:51:01,215 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-19 14:51:24,903 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2
+2026-01-19 14:53:59,964 | INFO | n4_phase1_ingestion | Loaded UNODC homicide dataset
+2026-01-19 14:54:00,040 | INFO | n4_phase1_ingestion | Loaded WHO road traffic mortality dataset
+2026-01-19 14:54:08,338 | INFO | n4_phase1_ingestion | Loaded EM-DAT disaster dataset
+2026-01-19 14:54:30,899 | INFO | n4_phase1_ingestion | All raw datasets loaded for Phase 2

@@ -1,0 +1,13 @@
+.env/
+__pycache__/
+.ipynb_checkpoints/
+
+# Raw datasets exclusions (selective)
+datasets/raw/**/openaq_raw.csv
+datasets/raw/**/ghe_dalys_india_full_raw.csv
+
+# Experiment tracking
+mlruns/
+
+# Editor config
+.vscode/
