@@ -1,38 +1,220 @@
-# MLOps / Portfolio Polish
+# 📘 EDA + MLOps Portfolio
 
-## Objective
+## Systemic Risk & Inequality Intelligence Platform
 
-- Add logging for reproducibility and traceability
-- Ensure project paths are **config-driven**
-- Make the notebook **re-runnable end-to-end**
-- Provide clear outputs for portfolio presentation
-- Ensure all artifacts (plots, cleaned CSVs) are saved systematically
+This repository is a **production-aware EDA + MLOps portfolio** that demonstrates how to analyze complex, policy-relevant datasets **without forcing invalid conclusions**.
 
-## Logging Setup
+It is **intentionally not a modeling-heavy project**.
 
-- Logging ensures **every key step is recorded**
-- Useful for debugging, collaboration, and portfolio showcase
+Instead, it focuses on:
 
-## Config-Driven Paths
+* real-world data cleaning and validation judgment
+* analytical discipline (what *can* and *cannot* be concluded)
+* modular, reproducible analytics workflows
+* applying MLOps-style structure to exploratory data analysis
 
-- Config-driven paths make notebook **re-runnable on any machine**
-- Easy to update paths globally instead of changing every cell
+The goal is to show how a responsible **Data Scientist / ML Engineer thinks *before* building models**.
 
-## Reproducibility: Random Seeds & Versions
+---
 
-- Seed ensures any stochastic operation (e.g., train-test splits) is reproducible
-- Version logs help maintain **portfolio credibility**
+## 🧠 Project Motivation
 
-## Saving Artifacts Automatically
+Most real-world datasets:
 
-- All key outputs (data + plots) are saved to structured folders
-- Portfolio reviewers can **see raw data, plots, and results** immediately
+* come from different institutions
+* follow different definitions
+* cover different countries and time spans
+* contain structural (not random) missingness
 
-## Notebook Re-Runnable Gaurantee
+Naively merging such datasets often produces results that look rigorous but are **fundamentally misleading**.
 
-- ✅ All paths defined via PROJECT_ROOT
-- ✅ Data ingestion via `load_data()`
-- ✅ Cleaning via `clean_openaq()`
-- ✅ Plots saved in `plots/climate` folder
-- ✅ Logging records all important actions
-- ✅ Random seeds set for reproducibility
+This project asks a harder question:
+
+> **How do independent stresses—environmental, health, digital access, and risk exposure—co-exist without inventing causality, prediction, or rankings?**
+
+---
+
+## 🔍 What This Project *Is* — and *Is Not*
+
+### ✅ This project **is**
+
+* A production-structured analytics system
+* Notebook-driven, but **artifact- and script-backed**
+* Explicit about scope, limits, and non-claims
+* Designed to be auditable and reproducible
+* Focused on **analytical correctness over visual impressiveness**
+
+### ❌ This project **is not**
+
+* A dashboard
+* A Kaggle-style notebook
+* A predictive or causal model
+* A country ranking or governance score
+* A policy recommendation engine
+
+---
+
+## 🧱 High-Level Architecture
+
+```
+Raw Data Sources
+      ↓
+Domain-Specific Ingestion (src/ingestion)
+      ↓
+Cleaning & Validation (src/preprocessing)
+      ↓
+Domain Index Construction
+      ↓
+Immutable CSV Artifacts (datasets/processed)
+      ↓
+System-Level Synthesis (Notebook 05)
+      ↓
+Regimes · Inequality · Typologies
+```
+
+**Core principle:**
+
+> **Each domain must be analytically correct in isolation before synthesis is allowed.**
+
+---
+
+## 📂 Repository Structure (Why It’s Organized This Way)
+
+```
+datasets/
+├── raw/        # Source-of-truth datasets (never mutated)
+└── processed/  # Frozen analytical artifacts (versioned outputs)
+
+notebooks/
+├── 00_*        # Context, assumptions, and scope
+├── 01–04_*     # Independent domain analyses
+└── 05_*        # System-level synthesis only
+
+src/
+├── ingestion/      # Source-aware data loaders
+├── preprocessing/ # Cleaning & index construction logic
+├── features/      # Shared feature logic
+└── utils/          # Configs, logging, path management
+```
+
+This mirrors how **real analytics systems** are built:
+
+* ingestion ≠ cleaning ≠ analysis
+* notebooks **consume artifacts**, they don’t silently create them
+
+---
+
+## 📊 Analytical Domains
+
+Each domain is treated as an **independent analytical lens**, with its own scope and constraints.
+
+### 🌍 Environmental Stress
+
+* Data: OpenAQ (air quality)
+* Output: *Environment Stress Index*
+* Scope: India-focused
+
+### 🏥 Health Burden
+
+* Data: WHO GHE (DALYs)
+* Output: *Health Burden Index*
+* Scope: India (sparse reporting years)
+
+### 🌐 Digital Divide
+
+* Data: World Bank digital & economic indicators
+* Output: *Digital Divide Index*
+* Scope: Global, multi-year
+
+### ⚠️ Risk Exposure
+
+* Data: EM-DAT, UNODC, WHO
+* Output: *Risk Exposure Index*
+* Scope: Global, single-year snapshot
+
+---
+
+## 🧠 System-Level Synthesis (Notebook 05)
+
+A key result of this project is **proving what cannot be done**.
+
+* A strict global four-lens intersection results in **zero valid country–year overlap**
+* Instead of forcing alignment, the system introduces **explicit synthesis regimes**
+* Each regime defines:
+
+  * which lenses are valid
+  * which are structurally absent
+  * what conclusions are allowed
+
+This design prevents:
+
+* false global comparisons
+* misleading composite scores
+* accidental causal or policy claims
+
+---
+
+## 📈 Methods Used
+
+* Distribution analysis
+* Median-based classification
+* Inequality metrics (Gini coefficient, concentration ratios)
+* Descriptive correlation (with strict guardrails)
+* Regime-based synthesis instead of forced joins
+
+**Explicit exclusions:**
+
+* No imputation
+* No prediction
+* No hidden assumptions
+
+---
+
+## 🔁 Reproducibility & MLOps Thinking
+
+Even without training models, this project applies **MLOps-grade discipline**:
+
+* Immutable datasets
+* Explicit YAML configuration
+* Modular preprocessing scripts
+* Clear analytical phase boundaries
+* Version-controlled artifacts
+* No hidden notebook state
+
+This makes the system:
+
+* review-safe
+* rerunnable
+* extensible without refactoring
+
+---
+
+## 🚧 Limitations (Intentional Guardrails)
+
+* No causal inference
+* No forecasting
+* No rankings
+* No governance scoring
+
+These are not missing features — they are **designed constraints**.
+
+---
+
+## 👤 Intended Audience
+
+This repository is designed for reviewers evaluating **analytical judgment**, including:
+
+* Data Scientist (Applied / Junior)
+* Machine Learning Engineer (Entry-Level)
+* MLOps Engineer (Junior)
+* AI / Data Internships
+
+---
+
+## 📌 Final Note
+
+> **The most important output of this project is knowing what not to conclude.**
+
+That mindset is the core signal this portfolio is built to demonstrate.
+
+---
